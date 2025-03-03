@@ -4,10 +4,27 @@ body {
     color: #fffaf4;
   }
   
+  /* this adds animations, not sure where yet but lets see */
+  .moving-element {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.1s ease-out;   /* snappy transition */
+  }
+
+  .moving-element:hover {
+    transform: translate(5px, -5px); /* immediate shift */
+  }
+
   header {
     background-color: #003272;
     color: rgb(255, 255, 255);
     padding: 5px;
+
+   
   }
   
   h1 {
