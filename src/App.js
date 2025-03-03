@@ -16,9 +16,6 @@ import "./styles.css";
 import "./App.css";
 
 
-
-//import "./MovingElement.js";
-
 function App() {
   return (
     <div>
