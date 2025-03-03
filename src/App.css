@@ -1,11 +1,11 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Courier New', monospace;
+    background-color: #004aad;
+    color: #fffaf4;
   }
   
   header {
-    background-color: #000000;
+    background-color: #003272;
     color: rgb(255, 255, 255);
     padding: 5px;
   }
