@@ -1,43 +1,40 @@
+ /* this adds animations, not sure where yet but lets see */
+ .moving-element {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.1s ease-out;   /* snappy transition */
+}
+
+.moving-element:hover {
+  transform: translate(5px, -5px); /* immediate shift */
+}
+
+
 body {
     font-family: 'Courier New', monospace;
     background-color: #004aad;
     color: #fffaf4;
   }
-  
-  
 
-  header {
+header {
     background-color: #003272;
     color: rgb(255, 255, 255);
     padding: 5px;
-
-    /* this adds animations, not sure where yet but lets see */
-  .moving-element {
-    display: inline-block;
-    padding: 10px 20px;
-    background: black;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    transition: transform 0.1s ease-out;   /* snappy transition */
-  }
-
-  .moving-element:hover {
-    transform: translate(5px, -5px); /* immediate shift */
-  }
-
-   
   }
   
-  h1 {
+h1 {
     text-align: center;
   }
   
-  section {
+section {
     padding: 20px;
   }
   
-  footer {
+footer {
     text-align: center;
     margin-top: 20px;
   }
