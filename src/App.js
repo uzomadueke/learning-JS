@@ -1,18 +1,14 @@
+// import MovingElement from "./components/MovingElement";
 //this just adds my initial website layout
 import React from 'react';
 import PopupButton from './components/PopupButton';
-import MovingElement from "./components/MovingElement";
-
-
- 
 
 //this imports the css file that I created
 import "./styles.css";
-
 import "./App.css";
-<div>
-      
-    </div>
+
+// import MovingElement from "./components/MovingElement";
+
 
 function App() {
   return (
@@ -21,10 +17,8 @@ function App() {
       <header>
         <h1>Welcome to My Portfolio</h1>
       </header>
-
-
-      <section id="about">
       <PopupButton />
+      <section id="about">
         <h2>About Kennedy Madueke</h2>
         <p>
           I am a software engineer with a strong foundation in computer science principles, dedicated to solving real-world problems through innovative software solutions. 

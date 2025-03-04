@@ -1,38 +1,37 @@
 import React, { useState } from "react";
-import "./PopupButton.css"; // Import the CSS file for styling
-
-
-
+import "./PopupButton.css";
 
 const PopupButton = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState({ top: "50%", left: "50%" });
 
-   // initiates the radnom movment 
- 
-   const handleHover = () => {
-    let randomX = Math.floor(Math.random() * 10) - 5; // -5px to +5px
-    let randomY = Math.floor(Math.random() * 10) - 5;
-    setPosition({ x: randomX, y: randomY });
-    
+  // Toggle pop-up
   const togglePopup = () => {
     setIsOpen(!isOpen);
-
-   
   };
-};
+
+  // Random movement on hover
+  const handleHover = () => {
+    const randomX = Math.random() * 80 + 10; // Random position between 10% and 90%
+    const randomY = Math.random() * 80 + 10;
+    setPosition({ top: `${randomY}%`, left: `${randomX}%` });
+  };
 
   return (
-    <div className="popup-container"
-
-    // calls movement function when mouse enters
-      onMouseEnter={handleHover}
-      onMouseLeave={() => setPosition({ x: 0, y: 0 })}
+    <div className="popup-container">
+      {/* Button with hover movement and click to open popup */}
+      <button
+        className="hover-button"
+        onClick={togglePopup}
+        onMouseEnter={handleHover}
+        style={{
+          position: "absolute",
+          top: position.top,
+          left: position.left,
+          transform: "translate(-50%, -50%)", // Keeps the button centered
+        }}
       >
-   
-      {/* Button with hover and click interaction */}
-      <button className="hover-button" onClick={togglePopup}>
-        My Background
+        Click Me
       </button>
 
       {/* Pop-up Modal */}
