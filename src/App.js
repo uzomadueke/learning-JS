@@ -1,6 +1,7 @@
 //this just adds my initial website layout
 import React from 'react';
 import MovingElement from "./components/MovingElement";
+import PopupButton from './components/PopupButton';
 
 
  
@@ -16,11 +17,16 @@ import "./App.css";
 function App() {
   return (
     
-    <div>
+    <div className='App'>
+      <PopupButton />
+      <MovingElement />
+
+
       <header>
         <h1>Welcome to My Portfolio</h1>
-        <MovingElement />
       </header>
+
+
       <section id="about">
         <h2>About Kennedy Madueke</h2>
         <p>
@@ -30,6 +36,8 @@ function App() {
           Through my work, I aim to blend technical excellence with creativity, building solutions that are both impactful and engaging.
           </p>
       </section>
+
+
       <section id="projects">
         <h2>My Projects</h2>
         <ul>
@@ -39,6 +47,8 @@ function App() {
           <li>HANGMAN</li>
         </ul>
       </section>
+
+
       <footer>
         <p>Contact us at ss.socialstudios@outlook.com</p>
         <p>MADUEKE'S PORTFOLIO. All Right Reserved. Developed by socialstudios.</p>

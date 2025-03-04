@@ -1,0 +1,39 @@
+/* Styles for the button */
+.hover-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hover-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Pop-up overlay */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Pop-up content */
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .close-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
