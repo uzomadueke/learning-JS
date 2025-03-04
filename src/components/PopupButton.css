@@ -1,15 +1,39 @@
+/* this puts buttons in columns and rows */
+.popup-buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 100px;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
 /* Styles for the button */
 .hover-button {
-    padding: 12px 24px;
-    font-size: 18px;
-    border: none;
+    padding: 100px 100px;
+    font-size: 20px;
+    border: 2px solid black;
     cursor: pointer;
-    transition: top 0.3s ease, left 0.3s ease, transform 0.2s ease-in-out;
+    transition: transform 0.3s ease-in-out;
   }
   
   .hover-button:hover {
-    transform: scale(1.05);
+    transform: scale(1.2); /* grows in size on hover*/
   }
+
+
+  /* Positioning each button to match your reference image 
+#get-to-know-me { grid-column: 1; grid-row: 1; transform: translateY(20px); }
+#proficiencies { grid-column: 2; grid-row: 1; transform: translateY(-10px); }
+#projects { grid-column: 3; grid-row: 1; transform: translateY(15px); }
+#experience { grid-column: 2; grid-row: 2; transform: translateY(20px); }
+#education { grid-column: 1; grid-row: 2; transform: translateY(40px); }
+#contact { grid-column: 3; grid-row: 2; transform: translateY(35px); }*/
+  
+
   
   /* Pop-up overlay */
   .popup-overlay {
@@ -27,9 +51,12 @@
   /* Pop-up content */
   .popup-content {
     background: white;
-    padding: 20px;
-    border-radius: 10px;
+    color: #000000;
+    padding: 150px;
+    border-radius: 55px;
     text-align: center;
+    min-width: 300px;
+    font-family: 'Courier New', monospace;
   }
   
   .close-button {

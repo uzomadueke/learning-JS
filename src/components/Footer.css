@@ -1,0 +1,30 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+footer {
+    width: 98%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+  }
+footer a {
+    color: rgb(244, 218, 113);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+  }
+footer a:hover {
+    opacity: 0.5;
+  }

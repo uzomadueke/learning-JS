@@ -9,6 +9,13 @@
   transition: transform 0.1s ease-out;   /* snappy transition */
 }
 
+/* adding rule to remove bullet points*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .moving-element:hover {
   transform: translate(5px, -5px); /* immediate shift */
 }
@@ -29,13 +36,21 @@ header {
 h1 {
     text-align: center;
   }
+
+p {
+    text-align: center;
+  }
   
 section {
-    padding: 20px;
+    padding: 100px;
   }
   
 footer {
-    text-align: center;
-    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /*background-color: black;*/
+    color: white;
   }
   
