@@ -1,7 +1,7 @@
 //this just adds my initial website layout
 import React from 'react';
-import MovingElement from "./components/MovingElement";
 import PopupButton from './components/PopupButton';
+import MovingElement from "./components/MovingElement";
 
 
  
@@ -18,16 +18,13 @@ function App() {
   return (
     
     <div className='App'>
-      <PopupButton />
-      <MovingElement />
-
-
       <header>
         <h1>Welcome to My Portfolio</h1>
       </header>
 
 
       <section id="about">
+      <PopupButton />
         <h2>About Kennedy Madueke</h2>
         <p>
           I am a software engineer with a strong foundation in computer science principles, dedicated to solving real-world problems through innovative software solutions. 

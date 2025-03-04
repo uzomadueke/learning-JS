@@ -17,9 +17,9 @@ const MovingElement = () => {
       className="moving-element"
       style={{ transform: `translate(${position.x}px, ${position.y}px)` }}
       onMouseEnter={handleHover}
-      onMouseLeave={() => setPosition({ x: 0, y: 0 })}
-    >
-      Hover Me
+      onMouseLeave={() => setPosition({ x: 0, y: 0 })} // hover word in space below
+    > 
+        
     </div>
   );
 };
