@@ -2,13 +2,8 @@
 import React from 'react';
 import MovingElement from "./components/MovingElement";
 
-function App() {
-  return (
-    <div>
-      <MovingElement />
-    </div>
-  )
-}
+
+ 
 
 //this imports the css file that I created
 import "./styles.css";
@@ -17,6 +12,11 @@ import "./App.css";
 
 
 function App() {
+  return (
+    <div>
+      <MovingElement />
+    </div>
+  )
   return (
     <div>
       <header>
