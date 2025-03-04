@@ -9,18 +9,17 @@ import MovingElement from "./components/MovingElement";
 import "./styles.css";
 
 import "./App.css";
-
+<div>
+      
+    </div>
 
 function App() {
   return (
-    <div>
-      <MovingElement />
-    </div>
-  )
-  return (
+    
     <div>
       <header>
         <h1>Welcome to My Portfolio</h1>
+        <MovingElement />
       </header>
       <section id="about">
         <h2>About Kennedy Madueke</h2>
