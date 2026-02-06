@@ -1,4 +1,56 @@
-.App {
-  font-family: sans-serif;
-  text-align: center;
+ /* this adds animations, not sure where yet but lets see */
+ .moving-element {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.1s ease-out;   /* snappy transition */
 }
+
+/* adding rule to remove bullet points*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.moving-element:hover {
+  transform: translate(5px, -5px); /* immediate shift */
+}
+
+
+body {
+    font-family: 'Courier New', monospace;
+    background-color: red;
+    color: #fffaf4;
+  }
+
+header {
+    background-color: #003272;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+  }
+  
+h1 {
+    text-align: center;
+  }
+
+p {
+    text-align: center;
+  }
+  
+section {
+    padding: 100px;
+  }
+  
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /*background-color: black;*/
+    color: white;
+  }
+  
